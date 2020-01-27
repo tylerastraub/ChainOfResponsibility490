@@ -4,7 +4,8 @@
 enum Material {
     CARDBOARD,
     WOOD,
-    STEEL
+    STEEL,
+    DIAMOND
 };
 
 #endif //CHAINOFRESPONSIBLITY490_MATERIAL_H

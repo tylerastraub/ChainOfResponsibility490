@@ -1,18 +1,20 @@
 #include "HandleDig.h"
 
 HandleDig::HandleDig(){
-
+    nextHandle = 0;
 }
 
 void HandleDig::setNext(HandleDig* h){
-
+    nextHandle = h;
 }
 
 void HandleDig::addHandler(){
 
 }
 
-void HandleDig::handle(){
 
+
+int HandleDig::handle(Material m){
+    nextHandle->handle(m);
 }
 
