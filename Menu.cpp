@@ -9,7 +9,7 @@ Menu::Menu(std::vector<std::string> menuItems) {
 
 void Menu::display() {
     for(int i = 0; i < _menuItems.size(); ++i) {
-        std::cout << i << ": " << _menuItems[i] << std::endl;
+        std::cout << i + 1 << ": " << _menuItems[i] << std::endl;
     }
 }
 

@@ -8,17 +8,21 @@
 
 class Level {
 public:
-    Level() = default;
+    Level();
     Level(std::vector<HandleDig*> layers);
     ~Level();
 
     void setLayers(std::vector<HandleDig*> layers);
+    void setDigger(Digger* digger);
+    void setMessage(std::string message);
+    int getLayerDepth();
     void displayLevel();
 private:
     int _layerDepth;
     int _levelWidth;
     std::vector<HandleDig*> _layers;
-    Digger* digger;
+    Digger* _digger;
+    std::string _topMessage;
 };
 
 #endif //CHAINOFRESPONSIBLITY490_LEVEL_H

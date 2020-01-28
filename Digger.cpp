@@ -19,10 +19,18 @@ void Digger::setPos(int xPos, int yPos) {
     _yPos = yPos;
 }
 
+void Digger::setMaxDigDepth(int maxDigDepth) {
+    _maxDigDepth = maxDigDepth;
+}
+
 int Digger::getXPos() {
     return _xPos;
 }
 
 int Digger::getYPos() {
     return _yPos;
+}
+
+int Digger::getMaxDigDepth() {
+    return _maxDigDepth;
 }
